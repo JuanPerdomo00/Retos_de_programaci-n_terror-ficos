@@ -23,8 +23,8 @@ function battleHorde(zombies: string, humans: string) {
 
     const nz: number[] = zombies.split("").map((nz) => Number(nz));
     const nh: number[] = humans.split("").map((nh) => Number(nh));
-    let auxz: number = 0; // Acumulador de poder de zombies
-    let auxh: number = 0; // Acumulador de poder de humanos
+    let auxz: number = 0;
+    let auxh: number = 0;
 
     for (let i = 0; i < nz.length; i++) {
         const currentZombiePower = nz[i] + auxz;
